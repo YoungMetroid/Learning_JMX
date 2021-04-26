@@ -7,10 +7,7 @@ public class DateTimeService implements  DateTimeServiceMBean
 {
     private String time = "0:00";
     private String date = "01-01-0001";
-    public String getTime()
-    {
-        return time;
-    }
+
     public String printTime()
     {
         System.out.println("The set time is: " + time);
@@ -21,6 +18,10 @@ public class DateTimeService implements  DateTimeServiceMBean
         this.time = time;
         System.out.println(time);
     }
+    public String getTime()
+    {
+        return time;
+    }
 
     public void setDate(String date)
     {
@@ -30,4 +31,7 @@ public class DateTimeService implements  DateTimeServiceMBean
     {
         return date;
     }
+
+    public void stop(){}
+    public void start() {}
 }
