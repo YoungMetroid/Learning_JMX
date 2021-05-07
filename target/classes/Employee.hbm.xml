@@ -1,0 +1,15 @@
+<?xml version="1.0"  ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "com.LearningHibernate.Employee" table="EmployeeTable">
+        <id name="id" type ="int">
+            <generator class="assigned"/>
+        </id>
+        <property name="firstName"/>
+        <property name="lastName"/>
+
+    </class>
+</hibernate-mapping>

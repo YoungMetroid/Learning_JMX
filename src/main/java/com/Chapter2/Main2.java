@@ -1,16 +1,17 @@
-package com.Chapter1;
+package com.Chapter2;
 
+import com.sun.jdmk.comm.HtmlAdaptorServer;
 import javax.management.*;
-import com.sun.jdmk.comm.*;
-
 import java.util.Set;
 
-public class ServiceAgent {
-
+public class Main2 {
     public static void main(String[] args)
     {
 
-        QueryExp queryExpression = Query.initialSubString(new AttributeValueExp("Date"), new StringValueExp(""));
+        //QueryExp queryExpression = Query.initialSubString(new AttributeValueExp("Date"), new StringValueExp(""));
+        DateTimeService dateTimeService = new DateTimeService();
+        System.out.println(dateTimeService.getTime());
+        System.out.println(dateTimeService.getDate());
         try
         {
             MBeanServer mBeanServer = MBeanServerFactory.createMBeanServer();
@@ -21,7 +22,7 @@ public class ServiceAgent {
 
 
             ObjectName objectName1 = new ObjectName("services:type=information,*");
-            Set queryList =mBeanServer.queryNames(objectName1,queryExpression);
+            //Set queryList =mBeanServer.queryNames(objectName1,queryExpression);
 
 
             MBeanInfo mBeanInfo = mBeanServer.getMBeanInfo(objectName);
