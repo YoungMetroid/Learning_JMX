@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="hbm2ddl.auto">create-drop</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">ghost</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/TestDB?createDatabaseIfNotExist=true</property>
+        <property name="show_sql">true</property>
+        <mapping class="LearningHibernate.Message"/>
+    </session-factory>
+
+</hibernate-configuration>

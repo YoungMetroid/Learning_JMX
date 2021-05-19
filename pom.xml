@@ -32,6 +32,14 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.4.31.Final</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.4.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>
