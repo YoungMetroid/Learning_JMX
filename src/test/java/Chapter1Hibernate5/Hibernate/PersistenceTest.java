@@ -57,10 +57,7 @@ public class PersistenceTest {
     {
         try(Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","ghost"))
         {
-            try(PreparedStatement ps = connection.prepareStatement(
-            "SELECT 'CREATE DATABASE TestDB' " +
-                    "WHERE NOT EXISTS (SELECT FROM pg_database = 'TestDB')\\gexec"
-            ))
+
         }
         catch (SQLException ex)
         {
