@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Chapter1Hibernate5.Hibernate.PersistenceTest]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="Chapter1Hibernate5.Hibernate.PersistenceTest">
+        <methods>
+          <include name="saveMessage"/>
+          <include name="readMessage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Chapter1Hibernate5.Hibernate.PersistenceTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Chapter1Hibernate5.Hibernate.PersistenceTest] -->

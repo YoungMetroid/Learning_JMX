@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: Chapter1Hibernate5.Hibernate.PersistenceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 5.095 sec <<< FAILURE!
+setUp(Chapter1Hibernate5.Hibernate.PersistenceTest)  Time elapsed: 4.779 sec  <<< FAILURE!
+org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [LearningHibernate.Message]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:133)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.<init>(AnnotationMetadataSourceProcessorImpl.java:108)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.<init>(MetadataBuildingProcess.java:164)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:158)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:86)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:479)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:85)
+	at org.hibernate.boot.MetadataSources.buildMetadata(MetadataSources.java:202)
+	at Chapter1Hibernate5.Hibernate.PersistenceTest.setUp(PersistenceTest.java:29)
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : LearningHibernate.Message
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:130)
+	... 43 more
+

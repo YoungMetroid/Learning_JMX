@@ -12,7 +12,7 @@
         <property name="connection.username">Felipe.Elizalde</property>
         <property name="connection.password">ghost</property>
         <property name="connection.url">jdbc:postgresql://localhost:5432/toshibatestingdb</property>
-        <mapping resource="employee.hbm.xml"/>
+        <!--mapping resource="employee.hbm.xml"/-->
     </session-factory>
 
 </hibernate-configuration>

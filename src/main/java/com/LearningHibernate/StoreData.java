@@ -8,11 +8,14 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+import java.net.URL;
+
 public class StoreData {
 
     public static void main(String[] args)
     {
-        StandardServiceRegistry standardServiceRegistry = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
+        URL resource = StoreData.class.getClassLoader().getResource("hibernate.cfg.xml");
+        StandardServiceRegistry standardServiceRegistry = new StandardServiceRegistryBuilder().configure(resource).build();
         Metadata metadata = new MetadataSources(standardServiceRegistry).getMetadataBuilder().build();
 
         SessionFactory factory = metadata.getSessionFactoryBuilder().build();
@@ -22,7 +25,7 @@ public class StoreData {
         Employee employee1 = new Employee();
 
 
-        employee1.setId(2);
+        employee1.setId(3);
         employee1.setFirstName("Mankey3");
         employee1.setLastName("POG");
 

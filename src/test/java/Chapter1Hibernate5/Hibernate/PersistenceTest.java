@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
-
+import com.LearningHibernate.Message;
 import static org.testng.Assert.assertEquals;
 
 public class PersistenceTest {

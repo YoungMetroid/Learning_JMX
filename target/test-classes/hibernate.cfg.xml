@@ -9,11 +9,11 @@
         <property name="hbm2ddl.auto">create-drop</property>
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.username">postgres</property>
+        <property name="connection.username">Felipe.Elizalde</property>
         <property name="connection.password">ghost</property>
-        <property name="connection.url">jdbc:postgresql://localhost:5432/TestDB?createDatabaseIfNotExist=true</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/toshibatestingdb?createDatabaseIfNotExist=true</property>
         <property name="show_sql">true</property>
-        <mapping class="LearningHibernate.Message"/>
+        <mapping class="com.LearningHibernate.Message"/>
     </session-factory>
 
 </hibernate-configuration>
