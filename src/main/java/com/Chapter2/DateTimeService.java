@@ -63,11 +63,11 @@ public class DateTimeService
                     new IllegalArgumentException("Attribute name cannot be null");
             throw new RuntimeOperationsException(ex, "null attribute name");
         }
-        if (attributeName.equals("Date"))
+        if ("Date".equals(attributeName))
         {
             return getDate();
         }
-        if (attributeName.equals("Time"))
+        if ("Time".equals(attributeName))
         {
             return getTime();
         }
@@ -117,11 +117,11 @@ public class DateTimeService
             e.printStackTrace();
         }
 
-        if (name.equals("Date"))
+        if ("Date".equals(name))
         {
             setDate(value.toString());
         }
-        else if (name.equals("Time"))
+        else if ("Time".equals(name))
         {
             setTime(value.toString());
         }
@@ -194,12 +194,12 @@ public class DateTimeService
             IllegalArgumentException ex = new IllegalArgumentException("Operation name cannot be null");
             throw new RuntimeOperationsException(ex, "null operation name");
         }
-        if(operationName.equals("stop"))
+        if("stop".equals(operationName))
         {
             stop();
             return null;
         }
-        else if(operationName.equals("start"))
+        else if("start".equals(operationName))
         {
             start();
             return null;
